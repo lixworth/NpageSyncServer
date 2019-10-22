@@ -1,5 +1,5 @@
 {
-  "name": "npagebridge",
+  "name": "npagesyncbridge",
   "version": "1.0.0",
   "description": "BackEnd for Npage Project",
   "main": "index.js",
