@@ -1,0 +1,26 @@
+{
+  "name": "npagebridge",
+  "version": "1.0.0",
+  "description": "BackEnd for Npage Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "dev": "egg-bin dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lixworth/NpageBridge.git"
+  },
+  "author": "LixWorth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lixworth/NpageBridge/issues"
+  },
+  "homepage": "https://github.com/lixworth/NpageBridge#readme",
+  "dependencies": {
+    "egg": "^2.24.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.14.0"
+  }
+}
