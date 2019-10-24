@@ -14,12 +14,13 @@ npm run dev
 
 ## API
 
-### /
+### 基础状态 https://API_DOMAIN/
 ```json
+
 {
-    success: true,
-    message: "Captain on the bridge",
-    version: "1.0.0",
-    login: false
+  "success":true,
+  "message":"Captain on the bridge",
+  "version":"1.0.0",
+  "login":false
 }
 ```
