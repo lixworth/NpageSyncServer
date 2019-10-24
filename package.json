@@ -2,9 +2,9 @@
   "name": "npagesyncbridge",
   "version": "1.0.0",
   "description": "BackEnd for Npage Project",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "node test.js",
+    "test": "egg-bin test",
     "dev": "egg-bin dev"
   },
   "repository": {
@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/lixworth/NpageBridge#readme",
   "dependencies": {
-    "egg": "^2.24.0"
+    "egg": "^2.24.0",
+    "egg-mysql": "^3.0.0",
+    "egg-passport": "^2.1.0",
+    "egg-passport-local": "^1.2.1",
+    "egg-validate": "^2.0.2"
   },
   "devDependencies": {
     "egg-bin": "^4.14.0"
