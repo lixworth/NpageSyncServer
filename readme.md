@@ -2,6 +2,7 @@
 
 > Npage后端应用，用于同步账号内容
 
+我还是懒得去写单元测试23333
 ## Install
 
 ```
@@ -10,7 +11,13 @@ npm run dev
 ```
 
 ## Config
-
+``` 
+exports.version #版本号
+exports.keys #cookit安全字符串
+exports.mysql #mysq数据库配置 当前所使用的阿里DB
+exports.jwt #JsonWebToken
+exports.security #目前已关闭csrf
+```
 
 ## API
 
