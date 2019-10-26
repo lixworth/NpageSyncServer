@@ -1,5 +1,7 @@
 # Npage Sync Server
 
+[前端:https://github.com/boxlab/Npage](https://github.com/boxlab/Npage)
+
 > Npage后端应用，用于同步账号内容
 
 我还是懒得去写单元测试23333
