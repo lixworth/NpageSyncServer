@@ -40,7 +40,6 @@ exports.security #目前已关闭csrf
 {
     "success": true,
     "message": "许愿彼岸双生 出必还愿",
-    "login": false,
     "version": "1.0.0"
 }
 ```

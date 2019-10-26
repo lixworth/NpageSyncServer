@@ -5,7 +5,6 @@ class IndexController extends Controller{
         this.ctx.body = {
             success: true,
             message:"许愿彼岸双生 出必还愿",
-            login: false,
             version: this.config.version,
         };
     }
