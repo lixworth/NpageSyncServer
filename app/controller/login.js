@@ -2,18 +2,18 @@ const Controller = require('egg').Controller;
 const JWT = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 
-class LoginController extends Controller{
-    async index(){
+class LoginController extends Controller {
+    async index() {
         const name = this.ctx.request.body.name;
         const password = this.ctx.request.body.password;
-        if (typeof (name) == "undefined" || name==='') {
+        if (typeof (name) == "undefined" || name === '') {
             return this.ctx.body = {
                 success: false,
                 error: 101,
                 message: "用户名不合法",
             };
         }
-        if (typeof (password) == "undefined" || password==='') {
+        if (typeof (password) == "undefined" || password === '') {
             return this.ctx.body = {
                 success: false,
                 error: 102,
@@ -21,14 +21,14 @@ class LoginController extends Controller{
             };
         }
         const user = await this.ctx.service.user.findByName(name);
-        if(!user){
+        if (!user) {
             return this.ctx.body = {
                 success: false,
                 error: 104,
                 message: "用户不存在",
             };
         }
-        if(! bcrypt.compareSync(password, user.password)){
+        if (!bcrypt.compareSync(password, user.password)) {
             return this.ctx.body = {
                 success: false,
                 error: 105,
@@ -39,7 +39,7 @@ class LoginController extends Controller{
         const userToken = JWT.sign({
             id: user.id,
             name: user.name
-        },this.config.jwt.secret,{
+        }, this.config.jwt.secret, {
             algorithm: 'RS256',
             expiresIn: '2d',
         });

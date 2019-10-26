@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
-    "egg-bin": "^4.14.0"
+    "egg-bin": "^4.14.0",
+    "egg-mock": "^3.24.1"
   }
 }
