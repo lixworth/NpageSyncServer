@@ -1,3 +1,7 @@
+<div style="text-align:center">
+	<img src="banner.jpg" />
+</div>
+
 # Npage Sync Server
 
 [前端:https://github.com/boxlab/Npage](https://github.com/boxlab/Npage)
