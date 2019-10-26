@@ -19,7 +19,6 @@ npm run dev
 
 {
   "success":true,
-  "message":"Captain on the bridge",
   "version":"1.0.0",
   "login":false
 }

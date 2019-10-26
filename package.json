@@ -18,11 +18,13 @@
   },
   "homepage": "https://github.com/lixworth/NpageBridge#readme",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "egg": "^2.24.0",
     "egg-mysql": "^3.0.0",
     "egg-passport": "^2.1.0",
     "egg-passport-local": "^1.2.1",
-    "egg-validate": "^2.0.2"
+    "egg-validate": "^2.0.2",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "egg-bin": "^4.14.0"

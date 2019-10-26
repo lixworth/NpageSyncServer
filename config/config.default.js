@@ -15,3 +15,14 @@ exports.mysql = {
     app: true,
     agent: false,
 };
+
+
+exports.jwt = { //test
+    secret: 'egg-api-jwt',
+};
+
+exports.security = {
+    csrf: {
+        enable: false,
+    },
+};
