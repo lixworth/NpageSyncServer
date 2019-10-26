@@ -1,4 +1,4 @@
 .idea
-run
-logs
+run/
+logs/
 node_modules
