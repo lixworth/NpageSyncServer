@@ -78,6 +78,30 @@ exports.security #目前已关闭csrf
 }
 
 ```
+
+## Token加密 
+``` 
+Microsoft Windows [版本 10.0.17763.805]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+C:\Users\lixwo_qejn6ez>cd /
+
+C:\>cd "Program Files"
+
+C:\Program Files>cd OpenSSL-Win64
+
+C:\Program Files\OpenSSL-Win64>cd bin
+
+OpenSSL> genrsa -out d://jwt.pem 1024   #无法在c盘生成 权限问题
+Generating RSA private key, 1024 bit long modulus (2 primes)
+..........................................+++++
+.....+++++
+e is 65537 (0x010001)
+OpenSSL> rsa -in d://jwt.pem -pubout -out d://jwt_pub.pem
+writing RSA key
+OpenSSL>
+```
+
 ## 开源程序许可
 * Egg: https://github.com/eggjs
 * JWT: https://github.com/auth0/node-jsonwebtoken
