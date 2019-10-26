@@ -22,8 +22,7 @@ exports.security #目前已关闭csrf
 
 ## API
 > 需要登录操作的api需将Authorization加到Header 
->
-> 尚未对token进行加密 安全系数极低
+
 
 ### ErrorCode
 | Code | 原因 | 锅 |
