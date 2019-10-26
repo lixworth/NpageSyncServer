@@ -4,8 +4,10 @@
   "description": "BackEnd for Npage Project",
   "main": "app.js",
   "scripts": {
-    "test": "egg-bin test",
-    "dev": "egg-bin dev"
+    "start": "cross-env EGG_SERVER_ENV=prod egg-bin dev",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "egg-bin test"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
+    "cross-env": "^6.0.3",
     "egg-bin": "^4.14.0"
   }
 }

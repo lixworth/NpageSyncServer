@@ -7,7 +7,8 @@
 
 ```
 npm install
-npm run dev
+npm run start # 生产环境
+npm run dev # 开发环境
 ```
 
 ## Config
