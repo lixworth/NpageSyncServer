@@ -1,4 +1,7 @@
 //Config
+const fs = require('fs');
+const path = require('path');
+
 exports.version = '1.0.0';
 
 exports.keys = "Captain on the bridge";
@@ -16,9 +19,10 @@ exports.mysql = {
     agent: false,
 };
 
+let cert = fs.readFileSync(path.resolve(__dirname,'../app/jwt.pem'));
 
 exports.jwt = { //test
-    secret: 'egg-api-jwt',
+    secret: cert,
 };
 
 exports.security = {

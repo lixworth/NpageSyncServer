@@ -40,6 +40,7 @@ class LoginController extends Controller{
             id: user.id,
             name: user.name
         },this.config.jwt.secret,{
+            algorithm: 'RS256',
             expiresIn: '2d',
         });
 

@@ -33,6 +33,7 @@ exports.security #目前已关闭csrf
 | 102 | 传入密码不合法 | 用户/盒子 |
 | 103 | 传入密码不合法 | 用户/盒子 |
 | 104 | 用户名已存在 | 用户/盒子 |
+| 105 | 用户信息已过期 | 用户 |
 | 200 | 未知 | 远坂时臣 |
 
 ### GET 基础状态 https://API_DOMAIN/
@@ -66,6 +67,17 @@ exports.security #目前已关闭csrf
 }
 ```
 
+### GET 用户信息 https://API_DOMAIN/me    | Token
+```json
+{
+    "success": true,
+    "data": {
+        "id": 1,
+        "name": "LixWorth"
+    }
+}
+
+```
 ## 开源程序许可
 * Egg: https://github.com/eggjs
 * JWT: https://github.com/auth0/node-jsonwebtoken
