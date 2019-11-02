@@ -47,6 +47,7 @@ class LoginController extends Controller {
         return this.ctx.body = {
             success: true,
             data: {
+                "id": user.id,
                 "name": user.name,
                 "token": userToken,
                 "time": "2d"
