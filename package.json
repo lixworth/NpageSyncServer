@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/lixworth/NpageBridge#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "egg": "^2.24.0",
     "egg-mysql": "^3.0.0",
     "egg-passport": "^2.1.0",
